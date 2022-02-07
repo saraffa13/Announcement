@@ -1,0 +1,19 @@
+.form{
+    height: 12rem;
+    width: 90%;
+    border:1px solid red;
+    padding: auto0.6rem;
+    margin: auto;
+    /* display: flex; */
+}
+
+.form input{
+    height: 7rem;
+    width: 60%;
+    margin: auto;
+}
+
+.form button{
+    width: 6rem;
+    margin: auto;
+}

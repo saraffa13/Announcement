@@ -21,7 +21,7 @@ const Announcement = (props) => {
 
     return (
         <div className={classes.announcement}>
-            <h1>Announcement</h1>
+            <h1>Announcements</h1>
             <Form onReceive={messageArrayEditor} />
             <ul>
                 {messages.map(message => <li><MessageBox key={message.id} txt={message.txt} /></li>)}

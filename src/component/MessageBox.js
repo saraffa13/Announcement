@@ -1,15 +1,13 @@
-import { useState } from 'react'
-import Form from './Form';
-import classes from './MessageBox.module.css'
-
+import classes from "./MessageBox.module.css";
 
 const MessageBox = (props) => {
-
-    return (
-        <div className={classes.message_box}>
-            {props.txt}
-        </div>
-    )
-}
+  return (
+    <div className={classes.card}>
+      <div className={classes.card_body}>
+        <p className={classes.card_text}>{props.txt}</p>
+      </div>
+    </div>
+  );
+};
 
 export default MessageBox;

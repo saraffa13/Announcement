@@ -1,23 +1,81 @@
-.form{
-    height: 12rem;
-    width: 80%;
-    border:1px solid red;
-    padding: auto 0.6rem;
-    margin: auto;
+.form {
     display: flex;
-
-    
-}
-
-.form input{
-    height: 7rem;
-    width: 70%;
+    padding: 2rem;
+    width: 100%;
+    border: 1px solid red;
+    margin-top: 3em;
+    padding-bottom: 1rem;
+    background: #f4f4f4;
+    background: rgba(244, 244, 244, 0.79);
+    border: 1px solid #d3d3d3;
+    padding: 2px 5px;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+    width: 90%;
+    margin: 38px auto;
+  }
+  
+  .form input {
+    width: 78%;
     margin: auto;
-}
+    min-height: 6em;
+    background: #fefefe;
+    border: none;
+    margin-right: 5px;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4) inset,
+      1px 1px 1px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4) inset,
+      1px 1px 1px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4) inset,
+      1px 1px 1px rgba(255, 255, 255, 0.75);
+    border-radius: 9px;
+  }
+  .form input:focus {
+    outline: none;
+    box-shadow: 0 0 4px #0d76be inset;
+  }
+  
+  .form button {
+      position: relative;
+      top: 1rem;
+    width: 40%;
+    /* margin-top: 2rem; */
+    height:4rem;
+    padding: 3px;
+    background: linear-gradient(
+      to bottom,
+      rgba(52, 173, 236, 1) 0%,
+      rgba(38, 145, 220, 1) 100%
+    );
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 2px #2692dd inset;
+    border-radius: 9px;
+  }
 
-.form button{
-    width: 6rem;
-    height: 3rem;
-    border-radius: 0.5rem;
-    margin: auto;
-}
+  .form button:disabled{
+    background: linear-gradient(
+        to bottom,
+        rgb(129, 190, 223) 0%,
+        rgb(166, 190, 241) 100%
+      );
+  }
+  @media only screen and (min-width: 992px) {
+    .form {
+      padding: 2px;
+      box-shadow: 0 4px 9px rgb(0 0 0 / 37%);
+      border-radius: 10px;
+      width: 61%;
+      margin: 38px auto;
+    }
+    .form input {
+      margin-right: 41px;
+    }
+    .form button {
+      padding: 0;
+      margin: 0;
+    }
+  }

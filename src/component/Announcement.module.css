@@ -9,11 +9,11 @@
 }
 .announcement h1{
     text-align: center;
+    font-size: 3.5rem;
 }
 
 .announcement ul {
     width: 80%;
-    /* background-color: rgb(160, 141, 141); */
     margin: auto;
     
 }
@@ -23,3 +23,15 @@
 
 
 }
+@media only screen and (max-width: 600px) {
+    .announcement h1{
+        text-align: center;
+        font-size: 2rem;
+    }.announcement ul li {
+        list-style: none;
+        width: 100%;
+        position: relative;    
+        right:1.8rem;
+    
+    }
+  }

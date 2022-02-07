@@ -1,19 +1,23 @@
 .form{
     height: 12rem;
-    width: 90%;
+    width: 80%;
     border:1px solid red;
-    padding: auto0.6rem;
+    padding: auto 0.6rem;
     margin: auto;
-    /* display: flex; */
+    display: flex;
+
+    
 }
 
 .form input{
     height: 7rem;
-    width: 60%;
+    width: 70%;
     margin: auto;
 }
 
 .form button{
     width: 6rem;
+    height: 3rem;
+    border-radius: 0.5rem;
     margin: auto;
 }

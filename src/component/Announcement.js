@@ -5,26 +5,29 @@ import MessageBox from './MessageBox';
 
 
 const initial_message = [
-    {id:1,txt:"Hello! How are you doing?"},
-    {id:2,txt:"Hello! How are you?"}
+    { id: 1, txt: "Hello! How are you doing?" },
+    { id: 2, txt: "Hello! How are you?" }
 ]
 const Announcement = (props) => {
 
-    const [messages,setMessages] = useState(initial_message);
-    
-    const messageArrayEditor = (message) =>{
+    const [messages, setMessages] = useState(initial_message);
+
+    const messageArrayEditor = (message) => {
         setMessages(prevState => {
-            const array = [{id:Math.random(), txt :message},...prevState];
+            const array = [{ id: Math.random(), txt: message }, ...prevState];
             return array;
         });
     }
 
     return (
-        <div>
-            <Form onReceive={messageArrayEditor}/>
-            {messages.map(message => <MessageBox key={message.id} txt={message.txt} />)}
+        <div className={classes.announcement}>
+            <h1>Announcement</h1>
+            <Form onReceive={messageArrayEditor} />
+            <ul>
+                {messages.map(message => <li><MessageBox key={message.id} txt={message.txt} /></li>)}
+            </ul>
         </div>
-        
+
     )
 }
 

@@ -1,8 +1,25 @@
-.message_box{
-    width: 60%;
-    height: 8rem;
-    border: 1px solid red;
-    border-radius: 1rem;
-    padding: 0.5rem;
-    margin: 0.5rem;
+*{
+    margin: 0;
+    padding:0;
+}
+
+.announcement{
+    /* display: flex;
+    flex-direction: column;     */
+}
+.announcement h1{
+    text-align: center;
+}
+
+.announcement ul {
+    width: 80%;
+    /* background-color: rgb(160, 141, 141); */
+    margin: auto;
+    
+}
+.announcement ul li {
+    list-style: none;
+    width: 100%;
+
+
 }

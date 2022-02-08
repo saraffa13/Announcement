@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Homenaje&family=Luxurious+Roman&family=Monsieur+La+Doulaise&family=Neonderthaw&family=Supermercado+One&family=Tangerine:wght@700&display=swap');
+*{
+    
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header{
+    height: 4rem;
+    display: flex;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+
+.logo{
+    width:10% ;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.nav{
+    /* background-color:yellow; */
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    /* font-size: 3rem; */
+}
+.nav ul{
+    /* background-color: blue; */
+    display: flex;
+    height: 100%;
+    /* margin-left: 5rem; */
+    /* justify-content: center; */
+}
+.nav ul li{
+    list-style: none;
+    margin:auto 1.6rem;
+
+}
+.nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    font-family: 'Homenaje', sans-serif;
+}
+
+.search{
+    width: 30%;
+    background-color: rgb(138, 190, 224);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search input{
+    width: 40%;
+    /* margin:  2rem; */
+    height: 2rem;
+    margin-right: 0.8rem;
+    padding-left: 0.4rem;
+    border-radius: 0.5rem;    
+    border: none;
+}
+.search button{
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border: none;
+}   
+.fav{
+    color: rgb(46 108 149);
+    height: 1.5rem;
+    width: 1.5rem;
+} 
+.hamburger{
+    display: none;
+}
+@media only screen and (max-width: 1050px) {
+    .nav{
+        display: none;
+
+    }    
+    .header{
+        justify-content: space-between;
+    }
+    .logo{
+        width: 20%;
+    }
+    .search{
+        width: auto
+    }
+    .search input{        
+         margin:  1.2rem;
+         width: 60%;
+    }
+}
